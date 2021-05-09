@@ -1,16 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { Button } from 'antd';
 
-const button = props => {
+const button = ({ handleClick, text, buttonType }) => {
     return (
-        <div>
-            
-        </div>
+        <Button type={buttonType} onClick={handleClick}>{text}</Button>
     )
-}
-
-button.propTypes = {
-
 }
 
 export default button
