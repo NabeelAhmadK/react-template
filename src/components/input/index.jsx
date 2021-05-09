@@ -1,16 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { Input, Tooltip } from 'antd';
+import { InfoCircleOutlined, UserOutlined } from '@ant-design/icons';
 
-const input = props => {
+const input = ({ placeHolder, toolTipLabel }) => {
     return (
-        <div>
-            
-        </div>
+        <Input
+            placeholder={placeHolder}
+            prefix={<UserOutlined className="site-form-item-icon" />}
+            suffix={
+                <Tooltip title={toolTipLabel}>
+                    <InfoCircleOutlined style={{ color: 'rgba(0,0,0,.45)' }} />
+                </Tooltip>
+            }
+        />
     )
-}
-
-input.propTypes = {
-
 }
 
 export default input
