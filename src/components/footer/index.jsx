@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const footer = props => {
     return (
         <div>
-            
+            <p>Footer Component</p>
         </div>
     )
 }
