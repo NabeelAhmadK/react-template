@@ -1,10 +1,10 @@
-import './App.css';
+import './App.scss';
 import Headers from './components/header';
 import Footers from './components/footer'
 
 const App = () => {
   return (
-    <div className="App">
+    <div style={{ textAlign: 'center' }}>
       <Headers />
       <Footers />
     </div>
