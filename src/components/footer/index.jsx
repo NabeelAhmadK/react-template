@@ -1,16 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import Button from '../button'
 
 const footer = props => {
     return (
         <div>
-            <p>Footer Component</p>
+            Footer Component
         </div>
     )
-}
-
-footer.propTypes = {
-
 }
 
 export default footer
